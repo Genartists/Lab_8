@@ -1,0 +1,129 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+main {
+    background-color: #ddc;
+    border: solid 5vmin #eee;
+    border-bottom-color: #fff;
+    border-left-color: #eee;
+    border-radius: 2px;
+    border-right-color: #eee;
+    border-top-color: #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10vh 10vw;
+    height: 80vh;
+    padding: 8vmin;
+    position: relative;
+    text-align: center;
+
+    &:before {
+        border-radius: 2px;
+        bottom: -2vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+        content: "";
+        left: -2vmin;
+        position: absolute;
+        right: -2vmin;
+        top: -2vmin;
+    }
+
+    &:after {
+        border-radius: 2px;
+        bottom: -2.5vmin;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+        content: "";
+        left: -2.5vmin;
+        position: absolute;
+        right: -2.5vmin;
+        top: -2.5vmin;
+    }
+}
+
+main {
+    display: none;
+    background-image: url("south-park.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    max-width: 600px;
+    height: 506px;
+    margin: 30px auto 0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: center;
+}
+
+main img {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+}
+
+.animated {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.quoteContainer {
+    font-weight: 600;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.2)
+    );
+}
+
+.border-on-click {
+    border: 2px solid black;
+}
+
+.startButton {
+    background-color: transparent;
+    padding: 15px 32px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.startButton:hover {
+    background-color: #F2C335;
+}
+#randomButton {
+    display: none;
+}
